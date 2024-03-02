@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+
+  --text-color: #fff;
+  --secondary-text-color: #bdbdbd;
+  --brand-color: #fe662a;
+  --brand-color-selected: #9b4b2b;
+  --light-gray-bg-color: #2a3139;
+  --dark-gray-bg-color: #1c1f26;
+  --light-light-gray-bg-color: #dde0e4;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@keyframes flying-hero {
+  0%,
+  100% {
+    transform: rotate(-20deg) translateY(-15px);
+  }
+  50% {
+    transform: rotate(-20deg) translateY(15px);
+  }
+}
+
+@keyframes flying-horisontal {
+  0%,
+  100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes flying-vertical {
+  0%,
+  100% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
