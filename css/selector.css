@@ -1,3 +1,14 @@
+.selector.wrapper {
+  height: 120vh;
+  width: 100vw;
+  margin-top: -120px;
+
+  background-image: url("../img/header/header-background.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 25px rgb(0, 0, 0));
+}
+
 .selector-hero {
   .selector-hero__title {
     padding-top: 180px;

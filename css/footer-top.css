@@ -1,0 +1,40 @@
+.footer-top__menu {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  height: 200px;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &:hover {
+    height: 500px;
+  }
+
+  .footer-top__menu-item {
+    width: 200px;
+  }
+
+  .footer-top__menu-title {
+    color: black;
+  }
+
+  .footer-items {
+    margin-top: 40px;
+    list-style: none;
+  }
+
+  .footer-top__item {
+    margin-top: 15px;
+  }
+
+  .footer-top__item-link {
+    text-decoration: none;
+    color: var(--dark-secondary-text-color);
+    transition: all 0.2s;
+  }
+
+  .footer-top__item-link:hover {
+    color: black;
+  }
+}

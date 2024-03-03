@@ -10,9 +10,11 @@
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   cursor: none;
+  background-color: #ffffff;
 
   --text-color: #fff;
   --secondary-text-color: #dadada;
+  --dark-secondary-text-color: #848484;
   --brand-color: #fe662a;
   --brand-color-selected: #9b4b2b;
   --light-gray-bg-color: #2a3139;
@@ -32,6 +34,10 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+a {
+  cursor: none;
 }
 
 .cursor {

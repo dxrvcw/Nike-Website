@@ -14,7 +14,7 @@
   <body>
     <div class="cursor"></div>
     <div class="scroll-line"></div>
-    <header class="header__nav container">
+    <header class="container">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -22,7 +22,7 @@
       ></nav>
     </header>
     <div class="header-hero">
-      <section class="header-hero container">
+      <section class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -31,7 +31,7 @@
       </section>
     </div>
     <div class="selector wrapper">
-      <header class="selector-hero container">
+      <header class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -40,7 +40,7 @@
       </header>
     </div>
     <div class="recently-added-wrapper">
-      <section class="recently-added container">
+      <section class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -49,7 +49,7 @@
       </section>
     </div>
     <div class="quote-wrapper">
-      <section class="quote container">
+      <section class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -58,7 +58,7 @@
       </section>
     </div>
     <div class="shop-by-sport-wrapper">
-      <section class="shop-by-sport container">
+      <section class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -68,11 +68,29 @@
     </div>
 
     <div class="popular-right-now-wrapper">
-      <section class="popular-right-now container">
+      <section class="container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
           data-hx-get="index.popular-right-now.partial.html"
+        ></nav>
+      </section>
+    </div>
+
+    <section class="footer-top container">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.footer-top.partial.html"
+      ></nav>
+    </section>
+
+    <div class="footer-wrapper">
+      <section class="container">
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.footer.partial.html"
         ></nav>
       </section>
     </div>

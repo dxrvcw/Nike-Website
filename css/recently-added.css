@@ -6,7 +6,7 @@
 
 .recently-added {
   position: relative;
-  height: 75vh;
+  height: 95vh;
 
   .recently-added__text {
     width: 40%;
@@ -17,7 +17,8 @@
     padding: 30px 50px;
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 90px;
+    margin-top: 30px;
+    margin-bottom: 130px;
 
     &::before {
       position: absolute;
@@ -49,7 +50,7 @@
   }
 
   .button-container {
-    margin-top: 120px;
+    margin-top: 150px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -113,7 +114,7 @@
     height: 450px;
     border: 13px white solid;
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
-    top: -160px;
+    top: -190px;
     left: 800px;
     animation: flying-vertical 5s infinite;
   }
@@ -127,7 +128,7 @@
     height: 450px;
     overflow: hidden;
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
-    animation: flying-vertical 10s infinite;
+    animation: flying-vertical 6s infinite;
     animation-delay: 0.5s;
   }
 
@@ -163,7 +164,7 @@
       background-color: black;
       margin-top: 20px;
       margin-left: 40px;
-      animation: flying-horisontal 2s infinite;
+      animation: flying-horisontal 4s infinite;
       animation-delay: 0.5s;
     }
   }
