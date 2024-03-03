@@ -12,8 +12,9 @@
   z-index: 100;
   height: 80px;
   position: fixed;
-  left: 120px;
+  margin: auto;
   width: 100%;
+  left: 180px;
   top: 3px;
   display: flex;
   justify-content: space-between;
@@ -55,7 +56,7 @@
       z-index: 5;
       position: relative;
       text-decoration: none;
-      color: var(--secondary-text-color);
+      color: white;
       font-weight: 600;
       transition: all 0.3s;
     }
@@ -110,6 +111,6 @@
 
 @media (width <= 1440px) {
   .header__nav {
-    left: 60px;
+    left: 120px;
   }
 }

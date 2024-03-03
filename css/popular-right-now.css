@@ -15,11 +15,15 @@
   font-weight: 700;
   font-size: 30px;
 }
-
+.popular-right-nav__item-link {
+  text-decoration: none;
+  color: black;
+}
 .popular-right-now__item {
   .image-container {
     width: 500px;
     height: 500px;
+    transition: all 0.3s;
   }
 
   .popular-right-now__item-name {
@@ -31,5 +35,10 @@
   .popular-right-now__item-price {
     margin-top: 10px;
     font-weight: 700;
+  }
+  &:hover {
+    .image-container {
+      filter: drop-shadow(15px 15px 5px rgb(0, 0, 0, 0.1));
+    }
   }
 }

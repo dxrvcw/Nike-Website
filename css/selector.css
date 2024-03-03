@@ -48,7 +48,7 @@
     z-index: 0;
     width: 100vw;
     height: 200px;
-    left: 0;
+    left: -120px;
     top: 610px;
     position: absolute;
     display: flex;

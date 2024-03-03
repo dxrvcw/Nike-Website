@@ -1,17 +1,20 @@
-.header-hero {
+.header-hero-wrapper {
   background-image: url("../img/quote-second/image.png");
-  background-color: #ffff;
-  height: 100vh;
-  width: 100%;
   background-size: cover;
-  background-position: 0 45%;
+  background-position: 0 49%;
+}
+
+.header-hero {
+  height: 110vh;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .title {
-    margin-top: 240px;
+    margin-top: 150px;
     font-size: 182px;
     opacity: 0.3;
     font-weight: 600;
@@ -22,6 +25,8 @@
     border: 2px solid black;
     padding: 10px 40px;
     margin-top: 180px;
+    color: black;
+    text-decoration: none;
   }
 
   .button-text {

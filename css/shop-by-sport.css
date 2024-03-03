@@ -15,15 +15,26 @@
   font-size: 30px;
 }
 
+.shop-by-sport__item-link {
+  text-decoration: none;
+  color: black;
+}
+
 .shop-by-sport__item {
   .image-container {
     width: 500px;
     height: 500px;
+    transition: all 0.3s;
   }
 
   .shop-by-sport__item-text {
     margin-top: 10px;
     font-size: 16px;
     font-weight: 700;
+  }
+  &:hover {
+    .image-container {
+      filter: drop-shadow(15px 15px 5px rgb(0, 0, 0, 0.1));
+    }
   }
 }
