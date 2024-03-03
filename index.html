@@ -12,15 +12,26 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header wrapper">
-      <header class="header-nav container">
+    <div class="cursor"></div>
+    <div class="scroll-line"></div>
+    <header class="header__nav container">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-nav.partial.html"
+      ></nav>
+    </header>
+    <div class="quote-second-wrapper">
+      <section class="quote-second container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
-          data-hx-get="index.header-nav.partial.html"
+          data-hx-get="index.quote-second.partial.html"
         ></nav>
-      </header>
-      <header class="header-hero container">
+      </section>
+    </div>
+    <div class="selector wrapper">
+      <header class="selector-hero container">
         <nav
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
@@ -34,6 +45,34 @@
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
           data-hx-get="index.recently-added.partial.html"
+        ></nav>
+      </section>
+    </div>
+    <div class="quote-wrapper">
+      <section class="quote container">
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.quote.partial.html"
+        ></nav>
+      </section>
+    </div>
+    <div class="shop-by-sport-wrapper">
+      <section class="shop-by-sport container">
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.shop-by-sport.partial.html"
+        ></nav>
+      </section>
+    </div>
+
+    <div class="popular-right-now-wrapper">
+      <section class="popular-right-now container">
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.popular-right-now.partial.html"
         ></nav>
       </section>
     </div>

@@ -1,0 +1,65 @@
+.quote-second {
+  background-image: url("../img/quote-second/image.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin-top: 240px;
+    font-size: 182px;
+    opacity: 0.3;
+    font-weight: 600;
+  }
+
+  .button {
+    position: relative;
+    border: 2px solid black;
+    padding: 10px 40px;
+    margin-top: 180px;
+  }
+
+  .button-text {
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s;
+  }
+
+  .button::before {
+    content: "";
+    background-color: black;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 0.3s;
+  }
+
+  .button:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+  .button:hover {
+    .button-text {
+      color: var(--text-color);
+    }
+  }
+
+  .button::after {
+    content: "";
+    background-color: black;
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transition: all 0.3s;
+    animation: flying-horisontal 3s infinite;
+  }
+}

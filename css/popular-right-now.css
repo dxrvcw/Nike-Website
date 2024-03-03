@@ -1,0 +1,35 @@
+.popular-right-now {
+  margin-top: 100px;
+}
+
+.popular-right-now__items {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.popular-right-now__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.popular-right-now__item {
+  .image-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .popular-right-now__item-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .popular-right-now__item-price {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+}

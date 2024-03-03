@@ -1,5 +1,7 @@
 function init() {
   import("./header.js");
+  import("./cursor.js");
+  import("./header-nav.js");
 }
 
 const totalPartials = document.querySelectorAll(

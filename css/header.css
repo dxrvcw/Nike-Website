@@ -1,18 +1,36 @@
-.header.wrapper {
-  height: 125vh;
+.selector.wrapper {
+  height: 100vh;
   width: 100vw;
+  margin-top: -120px;
+
   background-image: url("../img/header/header-background.jpg");
-  background-position: 50% 90%;
+  background-position: 50% 50%;
   background-size: cover;
   filter: drop-shadow(0px 0px 25px rgb(0, 0, 0));
 }
 
+.scroll-line {
+  z-index: 110;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background-color: var(--brand-color);
+}
+
 .header__nav {
+  filter: drop-shadow(0px 0px 1px rgb(0, 0, 0, 1));
+  z-index: 100;
   height: 80px;
+  position: fixed;
+  left: 120px;
+  width: 100%;
+  top: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  margin: auto;
 
   .logo-container {
     height: 40px;
@@ -33,18 +51,23 @@
     display: flex;
     justify-content: center;
     gap: 60px;
+
+    a {
+      cursor: none;
+    }
   }
 
   .nav-buttons {
     flex-basis: 100%;
     margin-left: 80px;
-    z-index: 1;
+    z-index: 5;
 
     a {
+      z-index: 5;
       position: relative;
       text-decoration: none;
       color: var(--secondary-text-color);
-      font-weight: 400;
+      font-weight: 600;
       transition: all 0.3s;
     }
 
@@ -70,9 +93,10 @@
   }
 
   .menu {
-    z-index: 1;
+    z-index: 5;
     gap: 30px;
     .menu__item {
+      z-index: 5;
       width: 35px;
       height: 35px;
       border-radius: 40px;
@@ -95,8 +119,9 @@
   }
 }
 
-.header-hero {
+.selector-hero {
   .header-hero__title {
+    padding-top: 180px;
     color: var(--text-color);
     font-size: 72px;
     max-width: 450px;
@@ -106,7 +131,7 @@
 
   .sneakers-container {
     position: absolute;
-    z-index: 1;
+    z-index: 101;
     height: 30%;
     width: 45%;
     top: 0 !important;
@@ -200,7 +225,6 @@
       height: 25px;
       border-radius: 15px;
       opacity: 0.2;
-      cursor: pointer;
       transition: all 0.3s;
 
       &:hover {
@@ -231,78 +255,4 @@
 }
 .blue-shadow {
   filter: drop-shadow(0px 0px 250px rgba(20, 40, 220, 0.5));
-}
-
-.scroll-icon-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.scroll-icon {
-  position: relative;
-  display: block;
-  font-size: 0.933rem;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-  padding: 10px 10px 10px 40px;
-  &::before {
-    display: block;
-    position: absolute;
-    top: -2px;
-    left: 12px;
-    width: 24px;
-    height: 40px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 12px;
-    content: "";
-  }
-  &::after {
-    display: block;
-    position: absolute;
-    top: 9px;
-    left: 25px;
-    width: 2px;
-    height: 8px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 1px;
-    content: "";
-    animation-name: scroll;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    height: 8px;
-  }
-  20% {
-    opacity: 1;
-    height: 8px;
-  }
-  30% {
-    transform: translateY(0);
-    opacity: 1;
-    height: 19px;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translateY(19px);
-    opacity: 0;
-    height: 0;
-  }
-  81% {
-    transform: translateY(0);
-    opacity: 0;
-    height: 8px;
-  }
-  100% {
-    opacity: 1;
-    height: 8px;
-  }
 }

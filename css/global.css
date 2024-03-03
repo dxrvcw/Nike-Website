@@ -9,14 +9,19 @@
 :root {
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+  cursor: none;
 
   --text-color: #fff;
-  --secondary-text-color: #bdbdbd;
+  --secondary-text-color: #dadada;
   --brand-color: #fe662a;
   --brand-color-selected: #9b4b2b;
   --light-gray-bg-color: #2a3139;
   --dark-gray-bg-color: #1c1f26;
   --light-light-gray-bg-color: #dde0e4;
+}
+
+:root::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -27,6 +32,18 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+.cursor {
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .container {
