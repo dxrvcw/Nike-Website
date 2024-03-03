@@ -1,0 +1,143 @@
+.selector-hero {
+  .selector-hero__title {
+    padding-top: 180px;
+    color: var(--text-color);
+    font-size: 72px;
+    max-width: 450px;
+    margin-top: 120px;
+    letter-spacing: 5px;
+  }
+
+  .sneakers-container {
+    position: absolute;
+    z-index: 101;
+    height: 30%;
+    width: 45%;
+    top: 0;
+    left: 500px;
+    padding-top: 170px;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  @media (width <= 1440px) {
+    .sneakers-container {
+      top: 50px;
+    }
+  }
+
+  .sneakers-image {
+    object-fit: cover;
+    transform: rotate(-13deg);
+    transition: all 0.3s;
+    animation: flying-hero 5s infinite;
+  }
+
+  .panels-container {
+    z-index: 0;
+    width: 100vw;
+    height: 200px;
+    left: 0;
+    top: 610px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 19vw;
+    background-color: var(--light-gray-bg-color);
+    transition: all 0.3s;
+  }
+
+  .right-panel {
+    background-color: var(--dark-gray-bg-color);
+  }
+
+  .left-panel:hover,
+  .right-panel:hover {
+    width: 24vw;
+  }
+
+  .panels-text__left:hover ~ .panels-container .left-panel {
+    width: 24vw;
+  }
+
+  .panels-text__right:hover ~ .panels-container .right-panel {
+    width: 24vw;
+  }
+
+  .panels-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 270px;
+  }
+
+  .panels-text__left,
+  .panels-text__right {
+    z-index: 2;
+    max-width: 350px;
+  }
+
+  .panels-text__right {
+    text-align: right;
+  }
+
+  .panels-text-title {
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .panels-text-plain {
+    color: var(--secondary-text-color);
+  }
+
+  .color-picker {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 20px;
+
+    .color-picker-red,
+    .color-picker-yellow,
+    .color-picker-blue {
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      opacity: 0.2;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.4 !important;
+      }
+    }
+
+    .color-picker-red {
+      background-color: red;
+    }
+
+    .color-picker-yellow {
+      background-color: yellow;
+    }
+
+    .color-picker-blue {
+      background-color: blue;
+    }
+  }
+}
+
+.red-shadow {
+  filter: drop-shadow(0px 0px 250px rgba(220, 20, 60, 0.5));
+}
+
+.yellow-shadow {
+  filter: drop-shadow(0px 0px 250px rgba(217, 220, 20, 0.5));
+}
+.blue-shadow {
+  filter: drop-shadow(0px 0px 250px rgba(20, 40, 220, 0.5));
+}

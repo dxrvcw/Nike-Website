@@ -51,6 +51,13 @@ img {
   margin: auto;
 }
 
+@media (width <= 1440px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 .brand-color {
   color: var(--brand-color);
 }

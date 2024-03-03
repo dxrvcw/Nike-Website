@@ -167,4 +167,19 @@
       animation-delay: 0.5s;
     }
   }
+
+  @media (width <= 1440px) {
+    .image-border {
+      left: 600px;
+    }
+    .image-container {
+      left: 700px;
+    }
+    .image-decoration {
+      left: 750px;
+    }
+    .image-text {
+      left: 850px;
+    }
+  }
 }
