@@ -14,7 +14,7 @@
   align-items: center;
 
   .title {
-    margin-top: 150px;
+    margin-top: 10%;
     font-size: 182px;
     opacity: 0.3;
     font-weight: 600;
@@ -24,7 +24,7 @@
     position: relative;
     border: 2px solid black;
     padding: 10px 40px;
-    margin-top: 180px;
+    margin-top: 10%;
     color: black;
     text-decoration: none;
   }

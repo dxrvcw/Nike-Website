@@ -13,8 +13,8 @@
   height: 80px;
   position: fixed;
   margin: auto;
-  width: 100%;
-  left: 180px;
+  width: 80%;
+  left: 10%;
   top: 3px;
   display: flex;
   justify-content: space-between;
@@ -109,8 +109,3 @@
   }
 }
 
-@media (width <= 1440px) {
-  .header__nav {
-    left: 120px;
-  }
-}

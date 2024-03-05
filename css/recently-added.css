@@ -17,8 +17,8 @@
     padding: 30px 50px;
     font-size: 36px;
     font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 130px;
+    margin-top: 2%;
+    margin-bottom: 10%;
 
     &::before {
       position: absolute;
@@ -50,7 +50,7 @@
   }
 
   .button-container {
-    margin-top: 150px;
+    margin-top: 20%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -110,22 +110,22 @@
 
   .image-border {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 30vw;
+    height: 30vw;
     border: 13px white solid;
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
-    top: -190px;
-    left: 800px;
+    top: -22vh;
+    left: 50vw;
     animation: flying-vertical 5s infinite;
   }
 
   .image-container {
     z-index: 2;
     position: absolute;
-    top: -40px;
-    left: 900px;
-    width: 450px;
-    height: 450px;
+    top: -5vh;
+    left: 48vw; 
+    width: 30vw;
+    height: 30vw;
     overflow: hidden;
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
     animation: flying-vertical 6s infinite;
@@ -137,8 +137,8 @@
     position: absolute;
     height: 170px;
     width: 90px;
-    top: 370px;
-    left: 950px;
+    top: 60%;
+    left: 50vw;
     border: 5px black solid;
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
     animation: flying-vertical 7s infinite;
@@ -147,8 +147,8 @@
 
   .image-text {
     position: absolute;
-    top: 430px;
-    left: 1050px;
+    top: 65%;
+    left: 65%;
 
     .image-text-title {
       font-size: 24px;
@@ -169,18 +169,4 @@
     }
   }
 
-  @media (width <= 1440px) {
-    .image-border {
-      left: 600px;
-    }
-    .image-container {
-      left: 700px;
-    }
-    .image-decoration {
-      left: 750px;
-    }
-    .image-text {
-      left: 850px;
-    }
-  }
 }
